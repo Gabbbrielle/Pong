@@ -1,14 +1,16 @@
 from turtle import Turtle
+X = 800
 MOVE_DISTANCE = 100
 DOWN = 270
 UP = 90
 class Player(Turtle):
     def __init__(self, position):
         super().__init__()
+
         if position == "left":
-            self.goto(-650, 0)
+            self.goto(-X, 0)
         else:
-            self.goto(650, 0)
+            self.goto(X, 0)
         self.shape('square')
         self.color('white')
         self.speed('fastest')
@@ -17,6 +19,8 @@ class Player(Turtle):
         self.penup()
 
 
+#todo - set boundaries for the up and down
+#todo - make players appear faster
     def up(self):
         self.setheading(UP)
         self.forward(MOVE_DISTANCE)
@@ -26,7 +30,6 @@ class Player(Turtle):
         self.forward(MOVE_DISTANCE)
 
 
-    # TODO: each player must be independent. Does that mean that they must be in a list?
 
 
 
