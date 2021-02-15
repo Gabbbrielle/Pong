@@ -1,6 +1,8 @@
 from turtle import Turtle
 
 
+# TODO: set a or tuple with left, right and floor boundaries to use in all the game. (-850, 850, -350) and modify files
+
 class Play(Turtle):
     # TODO: line should just appear and not be seen as constructing itself
     def __init__(self):
